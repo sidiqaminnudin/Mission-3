@@ -98,6 +98,18 @@ body {
 .input-group input::placeholder {
     color: var(--text-gray);
 }
+.input-wrapper {
+    position: relative;
+}
+.input-wrapper .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
 
 .auth-action {
     display: flex;

@@ -6,6 +6,7 @@
     <title>Chill Register</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="auth-wrapper register">
@@ -23,11 +24,17 @@
                     </div>
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Masukkan password">
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Masukkan password">
+                            <i class="fa-solid fa-eye-slash eye-icon" id="togglePassword"></i>
+                        </div>
                     </div>
                     <div class="input-group">
                         <label for="confirm-password">Konfirmasi Password</label>
-                        <input type="password" id="confirm-password" placeholder="Masukkan konfirmasi password">
+                        <div class="input-wrapper">
+                            <input type="password" id="confirm-password" placeholder="Masukkan konfirmasi password">
+                            <i class="fa-solid fa-eye-slash eye-icon" id="toggleConfirmPassword"></i>
+                        </div>
                     </div>
                     <div class="auth-action">
                         <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
@@ -45,4 +52,20 @@
 
     </div>
 </body>
+<script>
+function setupTogglePassword(toggleId, inputId) {
+    const togglePassword = document.querySelector(toggleId);
+    const password = document.querySelector(inputId);
+
+    togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+    });
+}
+setupTogglePassword('#togglePassword', '#password');
+setupTogglePassword('#toggleConfirmPassword', '#confirm-password');
+</script>
 </html>
