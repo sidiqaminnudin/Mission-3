@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Londrina+Solid&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -34,11 +37,11 @@
         <div class="hero-content">
             <h1 class="hero-title">Duty After School</h1>
             <p class="hero-desc">
-                Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, 
-                Departemen Pertahanan mulai merekrut siswa sekolah menengah. 
+                Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+                Departemen Pertahanan mulai merekrut siswa sekolah menengah.
                 Mereka pun segera menjadi pejuang garis depan.
             </p>
-            
+
             <div class="hero-buttons">
                 <button class="btn-primary">Mulai</button>
                 <button class="btn-secondary">
@@ -46,121 +49,154 @@
                 </button>
                 <span class="age-tag">18+</span>
                 <div class="mute-button">
-                      <i class="fa-solid fa-volume-xmark"></i>
-                 </div>
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </div>
             </div>
         </div>
-        
+
     </header>
 
     <main class="content-wrapper">
 
         <section class="movie-section">
             <h3 class="section-title">Melanjutkan Tonton Film</h3>
-            <div class="movie-scroll-container">
-                <div class="movie-card wide">
-                    <img src="assets/images/movie1.png" alt="Don't Look Up"> <div class="card-overlay">
-                        <h4>Don't Look Up</h4>
-                        <span><i class="fa-solid fa-star text-yellow"></i> 4.5/5</span>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Sebelumnya">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="movie-scroll-container">
+                    <div class="movie-card wide">
+                        <img src="assets/images/movie1.png" alt="Don't Look Up">
+                        <div class="card-overlay">
+                            <h4>Don't Look Up</h4>
+                            <span><i class="fa-solid fa-star text-yellow"></i> 4.5/5</span>
+                        </div>
+                    </div>
+                    <div class="movie-card wide">
+                        <img src="assets/images/movie2.png" alt="All of Us Are Dead">
+                        <div class="card-overlay">
+                            <h4>All of Us Are Dead</h4>
+                            <span><i class="fa-solid fa-star text-yellow"></i> 4.2/5</span>
+                        </div>
+                    </div>
+                    <div class="movie-card wide">
+                        <img src="assets/images/movie3.png" alt="Blue Lock">
+                        <div class="card-overlay">
+                            <h4>Blue Lock</h4>
+                            <span><i class="fa-solid fa-star text-yellow"></i> 4.6/5</span>
+                        </div>
+                        <div class="badge-new">Episode Baru</div>
+                    </div>
+                    <div class="movie-card wide">
+                        <img src="assets/images/movie4.png" alt="A Man Called Otto">
+                        <div class="card-overlay">
+                            <h4>A Man Called Otto</h4>
+                            <span><i class="fa-solid fa-star text-yellow"></i> 4.4/5</span>
+                        </div>
                     </div>
                 </div>
-                <div class="movie-card wide">
-                    <img src="assets/images/movie2.png" alt="All of Us Are Dead">
-                    <div class="card-overlay">
-                        <h4>All of Us Are Dead</h4>
-                        <span><i class="fa-solid fa-star text-yellow"></i> 4.2/5</span>
-                    </div>
-                </div>
-                <div class="movie-card wide">
-                    <img src="assets/images/movie3.png" alt="Blue Lock">
-                    <div class="card-overlay">
-                        <h4>Blue Lock</h4>
-                        <span><i class="fa-solid fa-star text-yellow"></i> 4.6/5</span>
-                    </div>
-                    <div class="badge-new">Episode Baru</div>
-                </div>
-                <div class="movie-card wide">
-                    <img src="assets/images/movie4.png" alt="A Man Called Otto">
-                    <div class="card-overlay">
-                        <h4>A Man Called Otto</h4>
-                        <span><i class="fa-solid fa-star text-yellow"></i> 4.4/5</span>
-                    </div>
-                </div>
+                <button class="carousel-btn next" aria-label="Berikutnya">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </section>
 
         <section class="movie-section">
             <h3 class="section-title">Top Rating Film dan Series Hari ini</h3>
-            <div class="movie-scroll-container">
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster1.png" alt="Suzume">
-                    <div class="badge-new">Episode Baru</div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Sebelumnya">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="movie-scroll-container">
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster1.png" alt="Suzume">
+                        <div class="badge-new">Episode Baru</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster2.png" alt="Jurassic World">
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster3.png" alt="Sonic 2">
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster4.png" alt="All of Us Are Dead">
+                        <div class="badge-new">Episode Baru</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster5.png" alt="Big Hero 6">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
                 </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster2.png" alt="Jurassic World">
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster3.png" alt="Sonic 2">
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster4.png" alt="All of Us Are Dead">
-                    <div class="badge-new">Episode Baru</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster5.png" alt="Big Hero 6">
-                    <div class="badge-top">Top<br>10</div>
-                </div>
+                <button class="carousel-btn next" aria-label="Berikutnya">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </section>
 
         <section class="movie-section">
             <h3 class="section-title">Film Trending</h3>
-            <div class="movie-scroll-container">
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster6.png" alt="Tomorrow War">
-                    <div class="badge-top">Top<br>10</div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Sebelumnya">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="movie-scroll-container">
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster6.png" alt="Tomorrow War">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster7.png" alt="Quantumania">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster8.png" alt="Guardians">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster9.png" alt="A Man Called Otto">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster10.png" alt="A Man Called Otto">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
                 </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster7.png" alt="Quantumania">
-                    <div class="badge-top">Top<br>10</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster8.png" alt="Guardians">
-                    <div class="badge-top">Top<br>10</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster9.png" alt="A Man Called Otto">
-                    <div class="badge-top">Top<br>10</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster10.png" alt="A Man Called Otto">
-                    <div class="badge-top">Top<br>10</div>
-                </div>
+                <button class="carousel-btn next" aria-label="Berikutnya">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </section>
 
         <section class="movie-section">
             <h3 class="section-title">Rilis Terbaru</h3>
-            <div class="movie-scroll-container">
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster10.png" alt="Tomorrow War">
-                    <div class="badge-top">Top<br>10</div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Sebelumnya">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="movie-scroll-container">
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster10.png" alt="Tomorrow War">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster12.png" alt="Quantumania">
+                        <div class="badge-new">Episode Baru</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster5.png" alt="Guardians">
+                        <div class="badge-top">Top<br>10</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster4.png" alt="A Man Called Otto">
+                        <div class="badge-new">Episode Baru</div>
+                    </div>
+                    <div class="movie-card portrait">
+                        <img src="assets/images/poster11.png" alt="A Man Called Otto">
+                    </div>
                 </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster12.png" alt="Quantumania">
-                    <div class="badge-new">Episode Baru</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster5.png" alt="Guardians">
-                    <div class="badge-top">Top<br>10</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster4.png" alt="A Man Called Otto">
-                    <div class="badge-new">Episode Baru</div>
-                </div>
-                <div class="movie-card portrait">
-                    <img src="assets/images/poster11.png" alt="A Man Called Otto">
-                </div>
+                <button class="carousel-btn next" aria-label="Berikutnya">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </section>
 
@@ -173,48 +209,49 @@
             </div>
             <p class="copyright">@2023 Chill All Rights Reserved.</p>
         </div>
-        
+
         <div class="footer-links">
-  <div class="link-column">
-    <button class="footer-title">
-      Genre <span class="arrow">›</span>
-    </button>
+            <div class="link-column">
+                <button class="footer-title">
+                    Genre <span class="arrow">›</span>
+                </button>
 
-     <div class="genre-grid">
-      <a href="#">Aksi</a>
-      <a href="#">Anak-anak</a>
-      <a href="#">Anime</a>
-      <a href="#">Britania</a>
+                <div class="genre-grid">
+                    <a href="#">Aksi</a>
+                    <a href="#">Anak-anak</a>
+                    <a href="#">Anime</a>
+                    <a href="#">Britania</a>
 
-      <a href="#">Drama</a>
-      <a href="#">Fantasi Ilmiah</a>
-      <a href="#">Kejahatan</a>
-      <a href="#">KDrama</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Fantasi Ilmiah</a>
+                    <a href="#">Kejahatan</a>
+                    <a href="#">KDrama</a>
 
-      <a href="#">Komedi</a>
-      <a href="#">Romantis</a>
-      <a href="#">Thriller</a>
-      <a href="#">Horror</a>
-    </div>
-  </div>
-</div>
+                    <a href="#">Komedi</a>
+                    <a href="#">Romantis</a>
+                    <a href="#">Thriller</a>
+                    <a href="#">Horror</a>
+                </div>
+            </div>
+        </div>
 
-<div class="footer-links">
-  <div class="link-column">
-    <button class="footer-title">
-      <h4>Bantuan</h4> <span class="arrow">›</span>
-    </button>
+        <div class="footer-links">
+            <div class="link-column">
+                <button class="footer-title">
+                    <h4>Bantuan</h4> <span class="arrow">›</span>
+                </button>
 
-    <div class="footer-content">
-      <a href="#">FAQ</a>
-      <a href="#">Kontak Kami</a>
-      <a href="#">Privasi</a>
-      <a href="#">Syarat & Ketentuan</a>
-    </div>
-  </div>
-</div>
+                <div class="footer-content">
+                    <a href="#">FAQ</a>
+                    <a href="#">Kontak Kami</a>
+                    <a href="#">Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
 </body>
+
 </html>

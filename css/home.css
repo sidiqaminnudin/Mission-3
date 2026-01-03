@@ -187,6 +187,47 @@ body {
     color: var(--text-white);
 }
 
+.carousel-wrapper {
+    position: relative;
+}
+
+/* tombol panah */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 999px;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.carousel-btn.prev {
+    left: -15px;
+}
+
+.carousel-btn.next {
+    right: 85px;
+}
+
+/* muncul saat hover seperti Netflix */
+.carousel-wrapper:hover .carousel-btn {
+    opacity: 1;
+}
+
 /* Container Scroll Horizontal tanpa Scrollbar */
 .movie-scroll-container {
     display: flex;
@@ -522,7 +563,8 @@ body {
         padding-left: 12px;
     }
 
-    .footer-content, .genre-grid {
+    .footer-content,
+    .genre-grid {
         display: none;
         padding-left: 12px;
     }
